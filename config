@@ -499,9 +499,9 @@ bindsym $mod+$mod2+Shift+0 move container to workspace number $ws30
 
 #assign [class="Org.gnome.Nautilus"] $ws1
 #assign [class="Alacritty"] $ws2
-#assign [class="firefox"] $ws3
+assign [class="zen"] $ws13
 assign [class="Rhythmbox"] $ws10
-assign [class="YouTube Music"] 10
+assign [class="YouTube Music"] $ws20
 #assign [class="Totem"] $ws10 #the basic gnome video player
 
 
@@ -630,7 +630,7 @@ bindsym $mod+Control+p exec --no-startup-id  $HOME/.config/picom/picom_toggler.s
 
 
 bindsym $mod+c exec --no-startup-id thunar
-bindsym $mod+w exec --no-startup-id firefox
+bindsym $mod+w exec --no-startup-id $HOME/.local/bin/zen
 bindsym $mod+Shift+w exec --no-startup-id firefox --private-window
 #bindsym $mod+w exec --no-startup-id $HOME/google_launch
 
@@ -823,7 +823,8 @@ for_window [class="Polybar"] floating enable
 
 # exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
 #Oh it only exec at boot makes sense
-bindsym $mod+x exec fish -c "set_public"
+bindsym $mod+x exec --no-startup-id "$HOME/Documents/Books/Novels/UncleDarkMage/download_script.sh"
+
 
 
 #exec --no-startup-id mpd
